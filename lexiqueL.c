@@ -695,7 +695,7 @@ int yy_flex_debug = 0;
 #define YY_RESTORE_YY_MORE_OFFSET
 char *yytext;
 #line 1 "lexique.l"
-/*Réalisé par: ElARAJI ILHAM && SMI-S6*/
+/*Réalisé par: ElARAJI ILHAM && Noureddine echchafiai SMI-S6*/
 #line 6 "lexique.l"
 
 #include <string.h>
@@ -997,12 +997,12 @@ case 1:
 /* rule 1 can match eol */
 YY_RULE_SETUP
 #line 20 "lexique.l"
-{ /* rien */ }
+{ /* rien */ };
 	YY_BREAK
 case 2:
 YY_RULE_SETUP
 #line 22 "lexique.l"
-{ /*  yylval= atoi(yytext); */strcpy(val,yytext); return ENTIER; };
+{ /* yylval= atoi(yytext); */strcpy(val,yytext); return ENTIER; };
 	YY_BREAK
 case 3:
 YY_RULE_SETUP
@@ -2289,7 +2289,7 @@ void yyfree (void * ptr )
 int yylval;
 float valReel; */
 
-/* 
+/*
 int yywrap(void) {
     return 1;
 } */

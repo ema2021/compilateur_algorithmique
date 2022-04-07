@@ -1,4 +1,4 @@
-/*Réalisé par: ElARAJI ILHAM && SMI-S6*/
+/*Réalisé par: ElARAJI ILHAM && Noureddine echchafiai SMI-S6*/
 
 %option yylineno
 %option noyywrap
@@ -17,9 +17,9 @@ SP  [!-+:-@[-`‘-”]
 %%
 
 
-[" "\t\n]                               { /* rien */ }
+[" "\t\n]                               { /* rien */ };
 
-[-|+]?{nbr}+                                  { /*  yylval= atoi(yytext); */strcpy(val,yytext); return ENTIER; };
+[-|+]?{nbr}+                                  { /* yylval= atoi(yytext); */strcpy(val,yytext); return ENTIER; };
 [-|+]?{nbr}+"."{nbr}+                         { /* valReel = atof(yytext); */strcpy(val,yytext); return REEL; };
 "'"{lettre}"'"                          { strcpy(val,yytext); return CHAR; };
 "\""({lettre}|" "|{nbr}|{SP})*"\""      { strcpy(val,yytext); return STRING; };
