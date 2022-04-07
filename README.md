@@ -11,5 +11,4 @@ $ ./build.sh compiler # compiler nom de compilateur (Vous pouvez le changer)
 **Tester :**
 ```code
 $ ./compiler code.txt
-
 ```
